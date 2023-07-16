@@ -1,0 +1,346 @@
+/* style.css */
+
+/* Mobile-first styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.header {
+    background-image: url(Andazaimg/Andazasan\ background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+.header h1 {
+    font-size: 36px;
+}
+
+.happy {
+    color: rgb(236, 156, 7);
+}
+
+.houses,
+.sitting-room,
+.lobby,
+.bedrooms {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.houses h2,
+.sitting-room h2,
+.lobby h2,
+.bedrooms h2 {
+    margin-bottom: 20px;
+}
+
+.house-images,
+.room-images,
+.lobby-images,
+.bedroom-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.house-images img,
+.room-images img,
+.lobby-images img,
+.bedroom-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* KITCHEN */
+.kitchen {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.kitchen h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.kitchen-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.image-container:hover .image-details {
+    opacity: 1;
+}
+
+.image-details h3,
+.image-details p {
+    margin: 5px;
+}
+
+/* LAWNS */
+.lawns {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.lawn-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.delayed-image {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.image-container:hover .image-details {
+    opacity: 1;
+}
+
+.image-details p {
+    margin: 5px;
+}
+
+/* RESTROOMS */
+.RestRooms {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.RestRooms .room-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.RestRooms .image-container {
+    position: relative;
+}
+
+.RestRooms .image-container img {
+    width: 400px;
+    height: 550px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.RestRooms .image-container:hover img {
+    transform: scale(1.05);
+}
+
+.RestRooms .image-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.RestRooms .image-container:hover .image-details {
+    opacity: 1;
+}
+
+.RestRooms .image-details p {
+    margin: 5px;
+}
+
+.footer {
+    background-color: #666;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+/* style.css */
+
+/* Mobile-first styles */
+
+/* Hamburger Menu */
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1;
+        color: white;
+        font-size: 24px;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+        font-weight: bold;
+    }
+
+    #menu-toggle:checked ~ .nav {
+        display: flex;
+    }
+}
+
+
+
+/* Media Query for responsive design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .houses h2,
+    .sitting-room h2,
+    .lobby h2,
+    .bedrooms h2,
+    .kitchen h2,
+    .lawns h2,
+    .RestRooms h2 {
+        font-size: 20px;
+    }
+
+    .kitchen-images img,
+    .delayed-image,
+    .RestRooms .image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
